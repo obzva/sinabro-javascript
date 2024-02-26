@@ -21,10 +21,13 @@
           class="text-green-900 px-2 py-2 hover:bg-green-200 rounded-lg"
         >
           <span> Cart</span>
-          <span class="hidden text-xs">(3)</span>
+          <span class="total-count text-xs"></span>
         </button>
       </nav>
-      <div id="products" class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4"></div>
+      <div
+        id="products"
+        class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4"
+      ></div>
       <div class="hidden cart-layer fixed inset-0">
         <div
           class="fixed left-0 top-0 bottom-0 w-1/2 bg-black opacity-30"
@@ -38,7 +41,7 @@
               Close
             </button>
           </div>
-          <div class="cart_items"></div>
+          <div class="cart-items"></div>
         </div>
       </div>
     </div>
